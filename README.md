@@ -7,4 +7,5 @@ A general-purpose python library that includes:
 - Dynamic Terminal display functions
 
 _Author_: Johnathon31 
+
 _credits_: No credits given
