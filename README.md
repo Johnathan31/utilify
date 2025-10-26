@@ -1,9 +1,14 @@
 # utilify Module
 
-A general-purpose python library that includes:
+A lightweight python library that includes:
 - Variable and String manipulation
-- Timer decorators
+- delay & timer decorators
 - Text comparison and auto-correction
 - Dynamic Terminal display functions
 
-_Author_: Johnathon31 
+## installation
+```bash
+pip install utilify
+```
+
+## Author: Johnathon31 
