@@ -2,8 +2,13 @@
 
 A general-purpose python library that includes:
 - Variable and String manipulation
-- Timer decorators
+- Timer & encrypter decorators
 - Text comparison and auto-correction
 - Dynamic Terminal display functions
 
-_Author_: Johnathon31 
+## Installation 
+```bash
+pip install utilify
+```
+
+### Author: Johnathon31 
