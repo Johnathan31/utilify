@@ -1,6 +1,7 @@
 # utilify 🛠️
 
-/license-MIT--0-blue.svg)](./LICENSE)
+
+[![License](https://img.shields.io/badge/license-MIT--0-blue.svg)](./LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/)
 
 ---
@@ -17,6 +18,15 @@ The goal is simple: gather all the little “useful” utilities you often rewri
 - **Decorators**: easy timing, encryption, and more.  
 - **Terminal display tools**: progress bars, spinners, and status messages.  
 - **Lightweight**: no heavy dependencies — plug it into any project.  
+- **Readable**: clean and well-structured code built for maintainability.
+
+---
+
+### 🧰 Installation
+Install directly from PyPI:
+
+```bash
+pip install utilify- **Lightweight**: no heavy dependencies — plug it into any project.  
 - **Readable**: clean and well-structured code built for maintainability.
 
 ---
