@@ -26,13 +26,6 @@ The goal is simple: gather all the little “useful” utilities you often rewri
 Install directly from PyPI:
 
 ```bash
-pip install utilify- **Lightweight**: no heavy dependencies — plug it into any project.  
-- **Readable**: clean and well-structured code built for maintainability.
-
----
-
-### 🧰 Installation
-Install directly from PyPI:
-
-```bash
 pip install utilify
+```
+---
