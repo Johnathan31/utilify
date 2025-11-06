@@ -28,4 +28,12 @@ Install directly from PyPI:
 ```bash
 pip install utilify
 ```
+
+Or from source:
+```bash
+git clone https://github.com/Johnathan31/utilify.git
+cd utilify
+pip install .
+```
+
 ---
