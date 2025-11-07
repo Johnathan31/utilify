@@ -1,4 +1,4 @@
-# utilify 🛠️
+if# utilify 🛠️
 
 
 [![License](https://img.shields.io/badge/license-MIT--0-blue.svg)](./LICENSE)
@@ -37,3 +37,9 @@ pip install .
 ```
 
 ---
+
+### 📄 Full Documentation
+To see full code documentation, write:
+```python
+help(utilify.documentation)
+```
