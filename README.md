@@ -23,13 +23,7 @@ The goal is simple: gather all the little “useful” utilities you often rewri
 ---
 
 ### 🧰 Installation
-Install directly from PyPI:
-
-```bash
-pip install utilify
-```
-
-Or from source:
+Install from source:
 ```bash
 git clone https://github.com/Johnathan31/utilify.git
 cd utilify
