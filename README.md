@@ -35,5 +35,5 @@ pip install .
 ### 📄 Full Documentation
 To see full code documentation, write:
 ```python
-help(utilify.documentation)
+help(utilify)
 ```
