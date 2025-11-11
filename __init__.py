@@ -63,7 +63,7 @@ def Index(item: Any, data: Any) -> Optional[int]:
     item -- the item to search for
     data -- the sequence to search in
 
-    >>> get_index("five", ("one", "two", "three", "four", "five")) → 4
+    >>> Index("five", ("one", "two", "three", "four", "five")) → 4
     """
     if isinstance(data, dict):
         raise TypeError("Can't get the index of a dict object")
@@ -82,7 +82,7 @@ def location(ind: int, data: Any) -> Optional[Any]:
     ind -- index of the desired element
     data -- the sequence to extract from
 
-    >>> get_location(2, ('a', 'b', 'c', 'd')) → 'c'
+    >>> location(2, ('a', 'b', 'c', 'd')) → 'c'
     """
     if isinstance(data, dict):
         raise TypeError("Can't get a value from a dict object by index")
