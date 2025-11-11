@@ -7,7 +7,7 @@ class variable:
     """A toolkit for editing variables"""
 
     @staticmethod
-    def Idelete(var: str, var_ind: int = -1) -> str:
+    def deleteInd(var: str, var_ind: int = -1) -> str:
         """
         Delete a specific letter by index
 
