@@ -44,7 +44,7 @@ def test_getabbr():
 """Part 2: Classes"""
 # Class variable
 def test_variableClass():
-	assert variable.Idelete("hellon") == "hello"
+	assert variable.deleteInd("hellon") == "hello"
 	
 	assert variable.delete("haunt", "a", 1) == 'hunt'
 	
