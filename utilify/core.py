@@ -55,7 +55,7 @@ def are_close(string1: str, string2: str, threshold: float, minimum: float, get_
 
 
 
-def index(item: Any, data: Any) -> Optional[int]:
+def Index(item: Any, data: Any) -> Optional[int]:
     """
     Get the index of an item in a tuple/list/variable.
     
