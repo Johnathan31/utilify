@@ -5,12 +5,16 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "utilify"
 version = "1.0.0"
-description = "A lightweight utility library editing & controlling data"
+description = "A lightweight utility library for barious operations"
 readme = "README.md"
-authors = [{ name="Johnathan31"}]
+authors = [{ name="Johnathan31", email="ab1049669@gmail.com" }]
 license = { text = "MIT" }
 requires-python = ">=3.8"
 dependencies = []
 
 [project.urls]
 "Homepage" = "https://github.com/johnathan31/utilify"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
