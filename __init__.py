@@ -55,7 +55,7 @@ def are_close(string1: str, string2: str, threshold: float, minimum: float, get_
 
 
 
-def get_index(item: Any, data: Any) -> Optional[int]:
+def Index(item: Any, data: Any) -> Optional[int]:
     """
     Get the index of an item in a tuple/list/variable.
     
@@ -74,7 +74,7 @@ def get_index(item: Any, data: Any) -> Optional[int]:
             return None
 
 
-def get_location(ind: int, data: Any) -> Optional[Any]:
+def location(ind: int, data: Any) -> Optional[Any]:
     """
     Get the first occurrence of an item at a given index.
     
@@ -160,7 +160,7 @@ def flash_items(collection: Any, delay: float = 0.5) -> None:
 
 
 def Sprint(data: Any, delay: float = 0.5, end: str = " ") -> None:
-    """Print items in a list/tuple/dictionary slowly."""
+    """Slow prints items in a list/tuple/dictionary."""
     if isinstance(data, dict):
         for key, value in data.items():
             print(f"{key}: {value}", flush=True, end=end)
@@ -232,7 +232,7 @@ class variable:
     """A toolkit for editing variables"""
 
     @staticmethod
-    def Idelete(var: str, var_ind: int = -1) -> str:
+    def deleteInd(var: str, var_ind: int = -1) -> str:
         """
         Delete a specific letter by index
 
@@ -319,10 +319,10 @@ def timer(func: Any) -> Any:
                 try:
                     func(*args, **kwargs)
                 except Exception:
-                    end = time.time()
+                    end = time.perf_counter()
                     print(f"{end - start:.4f}")
                     raise
-        end = time.time()
+        end = time.perf_counter()
         print(f"{end - start:.4f}")
 
     return wrapper
