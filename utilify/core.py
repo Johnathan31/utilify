@@ -1,7 +1,7 @@
 import difflib, time, sys, random, os, threading, base64
 import contextlib
 from typing import Any, Optional
-from utilify import strings
+import strings
 
 
 def auto_correct(word: str, dictionary: list[Any] | tuple[Any], alter_value: Any = None) -> Any:
@@ -186,7 +186,7 @@ def getabbr(text: str) -> str | None:
         nt = ""
         for t in text.split():
             for ch in t[0]:
-                if ch in strings.lower_letters:  # ignores non-standard symbols
+                if ch in strings.ascii_letters:  # ignores non-standard symbols
                     nt += ch.upper()
                     break
         return nt
