@@ -2,6 +2,7 @@ import difflib, time, sys, random, os, threading, base64
 import contextlib
 from typing import Any, Optional
 from string import ascii_letters
+from functools import wraps
 
 
 def auto_correct(word: str, dictionary: list[Any] | tuple[Any], alter_value: Any = None) -> Any:
@@ -311,7 +312,7 @@ def timer(func: Any) -> Any:
     	
     	timed() → 6.5043
     """
-
+    @wraps(func)
     def wrapper(*args: Any, **kwargs: Any) -> None:
         start = time.time()
         with open(os.devnull, "w") as devnull:
@@ -341,6 +342,7 @@ def run_once(func: Any) -> Any | None:
     """
     called = False
     result = None
+    @wraps(func)
     def wrapper(*args, **kwargs):
         nonlocal called, result
         if not called:
@@ -374,6 +376,7 @@ def encrypted(func: Any) -> Any | None:
     	
     	example() → 'SGVsbG8gd29ybGQ='
     """
+    @wraps(func)
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
         try:
