@@ -1,6 +1,6 @@
 import time, os, contextlib, base64
 from typing import Any, Optional 
-
+from functools import wraps
 
 def timer(func: Any) -> Any:
     """A decorator returning functions' elapsing time
@@ -14,7 +14,7 @@ def timer(func: Any) -> Any:
     	
     	timed() → 6.5043
     """
-
+    @wraps(func)
     def wrapper(*args: Any, **kwargs: Any) -> None:
         start = time.time()
         with open(os.devnull, "w") as devnull:
@@ -44,6 +44,7 @@ def run_once(func: Any) -> Any | None:
     """
     called = False
     result = None
+    wraps(func)
     def wrapper(*args, **kwargs):
         nonlocal called, result
         if not called:
@@ -77,6 +78,7 @@ def encrypted(func: Any) -> Any | None:
     	
     	example() → 'SGVsbG8gd29ybGQ='
     """
+    @wraps(func)
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
         try:
