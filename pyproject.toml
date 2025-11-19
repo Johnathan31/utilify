@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "utilify"
-version = "1.0.3"
+version = "1.1.0"
 description = "A lightweight utility library for various operations"
 readme = "README.md"
 authors = [{ name="Johnathan31", email="ab1049669@gmail.com" }]
