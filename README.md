@@ -35,3 +35,10 @@ pip install .
 ```
 
 ---
+### Documentatiom
+You can see full code documentation by:
+```python
+import utilify
+
+help(utilify)
+```
